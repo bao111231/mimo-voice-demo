@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MiMo 音色试听 · 四个版本</title>
+<style>
+  :root {
+    --bg: #f6f4f0;
+    --card: #ffffff;
+    --ink: #23211e;
+    --sub: #7a746c;
+    --line: #e5e0d8;
+    --accent: #c2563c;
+    --accent-soft: #f3e6e1;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 15px/1.7 -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 48px 22px 80px; }
+  header h1 { font-size: 26px; margin: 0 0 8px; letter-spacing: .5px; }
+  header p { color: var(--sub); margin: 0; font-size: 14px; }
+  .meta { margin-top: 18px; font-size: 13px; color: var(--sub); }
+  .group { margin-top: 40px; }
+  .group-title {
+    display: flex; align-items: baseline; gap: 10px;
+    border-bottom: 1px solid var(--line); padding-bottom: 10px; margin-bottom: 18px;
+  }
+  .group-title .no { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: 1px; }
+  .group-title h2 { font-size: 18px; margin: 0; font-weight: 600; }
+  .group-title .hint { color: var(--sub); font-size: 13px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px 20px 16px;
+    margin-bottom: 14px;
+  }
+  .card-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .card-head h3 { margin: 0; font-size: 16px; font-weight: 600; }
+  .tag {
+    font-size: 12px; color: var(--accent);
+    background: var(--accent-soft); border-radius: 999px; padding: 2px 10px;
+  }
+  .line { color: var(--sub); font-size: 13px; margin: 10px 0 10px; }
+  audio { width: 100%; margin: 4px 0 12px; }
+  details { border-top: 1px dashed var(--line); padding-top: 10px; }
+  summary { cursor: pointer; font-size: 13px; color: var(--sub); user-select: none; }
+  pre {
+    white-space: pre-wrap; word-break: break-word;
+    font: 13px/1.75 ui-monospace, Consolas, monospace;
+    background: #faf8f5; border: 1px solid var(--line); border-radius: 8px;
+    padding: 12px 14px; margin: 10px 0 0;
+  }
+  .copy {
+    margin-top: 8px; font-size: 12px; cursor: pointer;
+    border: 1px solid var(--line); background: #fff; color: var(--sub);
+    border-radius: 6px; padding: 4px 10px;
+  }
+  .copy:hover { border-color: var(--accent); color: var(--accent); }
+  footer { margin-top: 50px; font-size: 12px; color: var(--sub); border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>MiMo 音色试听</h1>
+    <p>同一套「音色描述」写法，四个方向各两版，另加原音色与改良版的对照。</p>
+    <div class="meta">模型 mimo-v2.5-tts-voicedesign · mp3 · 生成于 2026-10-22 · 每类内两版念同一句话，方便直接 A/B</div>
+  </header>
+
+  <section class="group">
+    <div class="group-title"><span class="no">00</span><h2>小肥鱼（原音色对照）</h2><span class="hint">先听原版，再听改良版</span></div>
+
+    <div class="card">
+      <div class="card-head"><h3>原版</h3><span class="tag">压缩包自带 voice.txt</span></div>
+      <div class="line">「哎你可算回来了，我刚才还在群里跟他们说你呢。」</div>
+      <audio controls preload="metadata" src="audio/00-fish/original.mp3"></audio>
+      <details><summary>音色描述</summary><pre>日式动画里的幼态萝莉音：音调高、音色清亮细嫩，带一点奶音的稚气，共鸣位置靠前、完全没有厚度。语速偏快、轻快跳跃，短句连发，句尾轻轻上扬并带笑意，尾音常拖长一点点，像随时在得意地卖弄。情绪外露、活泼俏皮，偶尔会突然害羞把声音收小。不是播音腔，也不要甜腻发嗲。</pre><button class="copy">复制</button></details>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>改良版</h3><span class="tag">更幼 · 更轻 · 去掉否定式</span></div>
+      <div class="line">「哎你可算回来了，我刚才还在群里跟他们说你呢。」</div>
+      <audio controls preload="metadata" src="audio/00-fish/improved.mp3"></audio>
+      <details open><summary>音色描述</summary><pre>少女感的女声，十六七岁，中高音，音色清亮偏软，带一点奶音，共鸣靠前，没有低音厚度。语速偏快，短句连发，句与句之间几乎不停顿。句尾轻轻上扬带笑，最后半句收得干脆，偶尔拖一点软尾音。语气随性灵动，带一点懒散的撒娇，像在群里跟熟人聊天。</pre><button class="copy">复制</button></details>
+    </div>
+  </section>
+
+  <section class="group">
+    <div class="group-title"><span class="no">01</span><h2>御姐</h2><span class="hint">两个方向：冷艳克制 / 慵懒沙哑</span></div>
+
+    <div class="card">
+      <div class="card-head"><h3>冷艳克制</h3><span class="tag">偏低 · 清冷 · 慢</span></div>
+      <div class="line">「怎么才回来，饭都热了两遍了。过来坐，跟我说说今天的事。」</div>
+      <audio controls preload="metadata" src="audio/01-yujie/cold.mp3"></audio>
+      <details><summary>音色描述</summary><pre>成年女性，二十五六岁，女中音偏低，音色清冷、干净，有一点柔光，不沙不哑。共鸣在口腔和胸腔之间，吐字清楚利落，尾音收得干净。语速中等偏慢，句子之间留一点停顿。语气从容克制，带一点居高临下的温柔，句末偶尔轻轻带笑。</pre><button class="copy">复制</button></details>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>慵懒沙哑</h3><span class="tag">微沙 · 气声 · 纵容</span></div>
+      <div class="line">「怎么才回来，饭都热了两遍了。过来坐，跟我说说今天的事。」</div>
+      <audio controls preload="metadata" src="audio/01-yujie/lazy.mp3"></audio>
+      <details><summary>音色描述</summary><pre>成年女性，二十七八岁，低压女声，音色微沙、略带气声，咬字松懒，句尾自然下沉。语速慢，节奏稳，像不急着把话说完。语气慵懒从容，带一点戏谑和纵容，笑起来时声音压得更低。</pre><button class="copy">复制</button></details>
+    </div>
+  </section>
+
+  <section class="group">
+    <div class="group-title"><span class="no">02</span><h2>萝莉</h2><span class="hint">八九岁清亮 / 五六岁奶音</span></div>
+
+    <div class="card">
+      <div class="card-head"><h3>幼态清亮</h3><span class="tag">八九岁 · 高音 · 跳</span></div>
+      <div class="line">「哥哥哥哥你终于回来啦！我等你好久好久，都快睡着了。」</div>
+      <audio controls preload="metadata" src="audio/02-loli/bright.mp3"></audio>
+      <details><summary>音色描述</summary><pre>小女孩，八九岁，童声，音调高，音色清亮薄嫩，带一点奶音，共鸣位置靠前，几乎没有低音厚度。语速偏快，短句连发，句尾轻轻上扬。语气天真活泼，情绪直接，一惊一乍，笑起来声音很亮。</pre><button class="copy">复制</button></details>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>奶音跳脱</h3><span class="tag">五六岁 · 含糖 · 卖弄</span></div>
+      <div class="line">「哥哥哥哥你终于回来啦！我等你好久好久，都快睡着了。」</div>
+      <audio controls preload="metadata" src="audio/02-loli/playful.mp3"></audio>
+      <details><summary>音色描述</summary><pre>小女孩，五六岁，极幼童声，音调很高，音色细亮，吐字微微含着一点软，像嘴里含着糖。语速快而跳，词与词之间几乎不停，句尾带一点上扬的软尾音。语气得意、爱卖弄、爱笑，偶尔突然害羞把声音收小。</pre><button class="copy">复制</button></details>
+    </div>
+  </section>
+
+  <section class="group">
+    <div class="group-title"><span class="no">03</span><h2>嗲嗲的</h2><span class="hint">黏人撒娇 / 清甜轻快</span></div>
+
+    <div class="card">
+      <div class="card-head"><h3>黏人撒娇</h3><span class="tag">软甜 · 拖尾 · 贴耳</span></div>
+      <div class="line">「你回来啦～人家等你好半天了嘛，快过来陪我说说话。」</div>
+      <audio controls preload="metadata" src="audio/03-cute/sticky.mp3"></audio>
+      <details><summary>音色描述</summary><pre>年轻女声，二十出头，偏高的女声，音色软甜，带明显气声，共鸣靠前，吐字慢而软。语速偏慢，尾音拖长并轻轻上扬，收尾常常软下来。语气黏人、撒娇、带笑，像贴着耳朵小声说话。</pre><button class="copy">复制</button></details>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>清甜轻快</h3><span class="tag">不腻 · 笑颤 · 轻</span></div>
+      <div class="line">「你回来啦～人家等你好半天了嘛，快过来陪我说说话。」</div>
+      <audio controls preload="metadata" src="audio/03-cute/sweet.mp3"></audio>
+      <details><summary>音色描述</summary><pre>年轻女声，二十岁左右，中高音，音色清甜柔软，带一层薄薄的气声，咬字清楚放松。语速中等偏慢，句子拉得软，尾音轻轻上翘。语气轻快爱撒娇，笑点很低，笑起来声音会跟着颤。</pre><button class="copy">复制</button></details>
+    </div>
+  </section>
+
+  <section class="group">
+    <div class="group-title"><span class="no">04</span><h2>亲妹妹</h2><span class="hint">活泼亲昵 / 乖巧小脾气</span></div>
+
+    <div class="card">
+      <div class="card-head"><h3>活泼亲昵</h3><span class="tag">十四五 · 明亮 · 随口</span></div>
+      <div class="line">「哥，你回来啦，我把你爱吃的菜留着了，快去洗手。」</div>
+      <audio controls preload="metadata" src="audio/04-sister/lively.mp3"></audio>
+      <details><summary>音色描述</summary><pre>少女，十四五岁，清亮少女音，中高音，音色干净明亮，已褪去童声，只留一点软。语速中偏快，句子短，句尾自然上扬。语气亲昵、不设防，像在家里随口说话，高兴时会拖一点尾音。</pre><button class="copy">复制</button></details>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h3>乖巧小脾气</h3><span class="tag">十二三 · 柔亮 · 收着</span></div>
+      <div class="line">「哥，你回来啦，我把你爱吃的菜留着了，快去洗手。」</div>
+      <audio controls preload="metadata" src="audio/04-sister/shy.mp3"></audio>
+      <details><summary>音色描述</summary><pre>少女，十二三岁，偏稚的少女音，音色柔亮略薄，咬字清楚，不刻意撒娇。语速不快，句子短，偶尔停一下像在想词。语气乖巧，带一点小脾气，亲近但收着，被夸时声音会变软。</pre><button class="copy">复制</button></details>
+    </div>
+  </section>
+
+  <footer>
+    选中一版后，把对应的描述贴进技能目录 voice.txt（或以 # 开头的注释行保留），保存即生效；也可填到技能设置「音色描述」里临时覆盖。
+  </footer>
+</div>
+<script>
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.closest('details').querySelector('pre').textContent;
+      navigator.clipboard.writeText(text).then(function () {
+        var old = btn.textContent;
+        btn.textContent = '已复制';
+        setTimeout(function () { btn.textContent = old; }, 1200);
+      });
+    });
+  });
+  document.querySelectorAll('audio').forEach(function (a) {
+    a.addEventListener('play', function () {
+      document.querySelectorAll('audio').forEach(function (b) { if (b !== a) b.pause(); });
+    });
+  });
+</script>
+</body>
+</html>
